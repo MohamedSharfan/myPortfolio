@@ -738,7 +738,7 @@ ul li a:hover{
     }
     .socials{
         position: absolute;
-        display: flex;
+        display: none;
         justify-content: space-around;
         align-items: center;
         left: 0px;
