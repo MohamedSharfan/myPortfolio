@@ -738,11 +738,11 @@ ul li a:hover{
     }
     .socials{
         position: absolute;
-        display: none;
+        display: flex;
         justify-content: space-around;
         align-items: center;
         left: 0px;
-        bottom: 10px;
+        bottom: 0px;
     }
 }
 
