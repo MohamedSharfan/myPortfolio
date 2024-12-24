@@ -101,8 +101,8 @@ ul li a:hover{
 .socials{
     position: absolute;
     display:block;
-    right: 250px;
-    bottom: 25px;
+    right: 35%;
+    bottom: 5%;
  
 }
 .socials i{
@@ -380,7 +380,7 @@ ul li a:hover{
         display: flex;
         font-size: 1.6rem;
         bottom: 10%;
-        right: 250px;
+        right: 30%;
         transition: 0.5s;
     }
     .home-text h1{
@@ -566,6 +566,7 @@ ul li a:hover{
         font-size: 1.3rem;
         line-height: 1.8rem;
         margin-top: 13px;
+        padding-bottom:80px;
         /* margin-bottom: ; */
     }
     .socials i{
@@ -580,8 +581,8 @@ ul li a:hover{
         display:flex;
         justify-content: space-around;
         align-items: center;
-        left: 15px;
-        bottom: 55px;
+        left: 30%;
+        bottom: 0%;
      
     }
     .home-image{
@@ -741,8 +742,8 @@ ul li a:hover{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        left: 10px;
-        bottom: 0px;
+        left: 25%;
+        bottom: 0%;
     }
 }
 
