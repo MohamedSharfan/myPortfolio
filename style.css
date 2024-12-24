@@ -580,7 +580,7 @@ ul li a:hover{
         display:flex;
         justify-content: space-around;
         align-items: center;
-        left: 0px;
+        left: 15px;
         bottom: 55px;
      
     }
@@ -741,7 +741,7 @@ ul li a:hover{
         display: flex;
         justify-content: space-around;
         align-items: center;
-        left: 0px;
+        left: 10px;
         bottom: 0px;
     }
 }
