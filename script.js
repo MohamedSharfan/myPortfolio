@@ -14,7 +14,7 @@ const sr =ScrollReveal({
 })
 sr.reveal('.about-heading',{})
 sr.reveal('.home-image',{delay:200})
-sr.reveal('.socials',{})
+
 
 sr.reveal('.home-text',{})
 sr.reveal('.photo',{})
