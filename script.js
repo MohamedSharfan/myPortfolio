@@ -26,3 +26,6 @@ sr.reveal('.interest-content',{})
 
 sr.reveal('.skill-heading',{})
 sr.reveal('.skill-wrapper',{})
+
+sr.reveal('.projects-heading',{})
+sr.reveal('.project-card',{interval:150})

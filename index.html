@@ -23,6 +23,7 @@
             <li><a href="#about" onclick="toggleMenu();">About</a></li>
             <li><a href="#interest" onclick="toggleMenu();">Interest</a></li>
             <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
+            <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
             <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
         </ul>
     </nav>
@@ -82,7 +83,40 @@
         <h2>My skills</h2>
     </div>
     <div class="skill-wrapper">
-        <!-- ======box======= -->
+        <!-- ======= AI / ML ======= -->
+        <div class="box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="python">
+            <h2>Python</h2>
+        </div>
+        <div class="box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg" alt="tensorflow">
+            <h2>TensorFlow</h2>
+        </div>
+        <div class="box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg" alt="scikit-learn">
+            <h2>Scikit-learn</h2>
+        </div>
+        <div class="box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg" alt="jupyter">
+            <h2>Jupyter</h2>
+        </div>
+        <!-- ======= Web / Backend ======= -->
+        <div class="box">
+            <img src="./react.png" alt="react">
+            <h2>React</h2>
+        </div>
+        <div class="box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="nodejs">
+            <h2>Node.js</h2>
+        </div>
+        <div class="box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="typescript">
+            <h2>TypeScript</h2>
+        </div>
+        <div class="box">
+            <img src="./javascript.png" alt="js">
+            <h2>JavaScript</h2>
+        </div>
         <div class="box">
             <img src="./html.png" alt="html">
             <h2>HTML</h2>
@@ -92,21 +126,154 @@
             <h2>CSS</h2>
         </div>
         <div class="box">
-            <img src="./javascript.png" alt="js">
-            <h2>JavaScript</h2>
-        </div>
-        <div class="box">
-            <img src="./react.png" alt="html">
-            <h2>React</h2>
-        </div>
-        <div class="box">
             <img src="./java1.jpg" alt="java">
             <h2>Java</h2>
         </div>
         <div class="box">
-            <img src="./mysql.png" alt="MySql">
-            <h2>MySql</h2>
+            <img src="./mysql.png" alt="mysql">
+            <h2>MySQL</h2>
         </div>
+        <div class="box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="docker">
+            <h2>Docker</h2>
+        </div>
+        <div class="box">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="git">
+            <h2>Git</h2>
+        </div>
+    </div>
+ </section>
+
+<!-- ========================projects============================= -->
+ <section id="projects">
+    <div class="projects-heading">
+        <h2>Projects</h2>
+    </div>
+    <div class="projects-wrapper">
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-transfer-alt'></i></div>
+            <h3>Skill-Swap Platform</h3>
+            <p>A full-stack web application that connects users and lets them exchange skills. Features authentication, dynamic listings, and a clean UI.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Flask</span><span>MySQL</span><span>JavaScript</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/MohamedSharfan/skill-swap" target="_blank" class="project-link">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="https://skillswap-254444117177.us-central1.run.app/" target="_blank" class="project-link project-link-demo">
+                    <i class='bx bx-link-external'></i> Live Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-leaf'></i></div>
+            <h3>ChloroGuard</h3>
+            <p>AI-powered plant health monitoring system that detects and classifies leaf diseases using computer vision and deep learning techniques.</p>
+            <div class="project-tags">
+                <span>Python</span><span>TensorFlow</span><span>Jupyter</span><span>AI/ML</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/MohamedSharfan/ChloroGuard" target="_blank" class="project-link">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="https://chloro-guard.vercel.app/" target="_blank" class="project-link project-link-demo">
+                    <i class='bx bx-link-external'></i> Live Demo
+                </a>
+            </div>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-bar-chart-alt-2'></i></div>
+            <h3>Covid-19 Dashboard</h3>
+            <p>An interactive data dashboard that visualizes COVID-19 statistics with real-time data, charts, and filters for different regions.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Data Viz</span><span>Dashboard</span>
+            </div>
+            <a href="https://github.com/MohamedSharfan/Covid_19_Dashboard" target="_blank" class="project-link">
+                <i class='bx bxl-github'></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-group'></i></div>
+            <h3>CrewZero</h3>
+            <p>A collaborative JavaScript application focused on team management and coordination with a dynamic and responsive interface.</p>
+            <div class="project-tags">
+                <span>JavaScript</span><span>HTML</span><span>CSS</span>
+            </div>
+            <a href="https://github.com/MohamedSharfan/CrewZero" target="_blank" class="project-link">
+                <i class='bx bxl-github'></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-server'></i></div>
+            <h3>User Registration API</h3>
+            <p>A RESTful backend API for user registration with secure authentication, input validation, and a clean architecture.</p>
+            <div class="project-tags">
+                <span>Python</span><span>REST API</span><span>Backend</span>
+            </div>
+            <a href="https://github.com/MohamedSharfan/user-registration-backend" target="_blank" class="project-link">
+                <i class='bx bxl-github'></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-window-alt'></i></div>
+            <h3>SEDS SL PM Frontend</h3>
+            <p>Frontend for the SEDS Sri Lanka project management and team collaboration web application built with TypeScript.</p>
+            <div class="project-tags">
+                <span>TypeScript</span><span>React</span><span>Team Collab</span>
+            </div>
+            <a href="https://github.com/MohamedSharfan/sedssl-pm-frontend" target="_blank" class="project-link">
+                <i class='bx bxl-github'></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-brain'></i></div>
+            <h3>Housing Price Model</h3>
+            <p>A machine learning model that predicts housing prices using regression techniques and exploratory data analysis on real-world datasets.</p>
+            <div class="project-tags">
+                <span>Python</span><span>Jupyter</span><span>Scikit-learn</span><span>ML</span>
+            </div>
+            <a href="https://github.com/MohamedSharfan/housing-model" target="_blank" class="project-link">
+                <i class='bx bxl-github'></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-shopping-bag'></i></div>
+            <h3>ARVINA Clothing Website</h3>
+            <p>A full-stack e-commerce clothing website with product listings, shopping cart, checkout, order management, and a dedicated admin panel.</p>
+            <div class="project-tags">
+                <span>PHP</span><span>MySQL</span><span>JavaScript</span><span>HTML</span>
+            </div>
+            <a href="https://github.com/MohamedSharfan/ARVINA-clothing-website-" target="_blank" class="project-link">
+                <i class='bx bxl-github'></i> View on GitHub
+            </a>
+        </div>
+
+        <div class="project-card">
+            <div class="project-icon"><i class='bx bx-devices'></i></div>
+            <h3>Akurana UG/YG Website</h3>
+            <p>A modern, SEO-optimised Next.js website for a youth group organisation, featuring an admin panel and deployed live on Vercel.</p>
+            <div class="project-tags">
+                <span>Next.js</span><span>JavaScript</span><span>CSS</span><span>Vercel</span>
+            </div>
+            <div class="project-links">
+                <a href="https://github.com/MohamedSharfan/akurana-ug-yg-website" target="_blank" class="project-link">
+                    <i class='bx bxl-github'></i> GitHub
+                </a>
+                <a href="https://ugygakurana.lk" target="_blank" class="project-link project-link-demo">
+                    <i class='bx bx-link-external'></i> Live Demo
+                </a>
+            </div>
+        </div>
+
     </div>
  </section>
 
