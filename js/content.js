@@ -3,22 +3,22 @@
 
 export const projects = [
   {
+    slug: 'govnavai',
+    title: 'GovNavAI',
+    category: 'AI Engineering · DHACK Finalist',
+    featured: true,
+    desc: 'A Sinhala / Tamil / English AI assistant for Sri Lankan government paperwork, grounded in 42 verified procedures — ask a question, get a checklist, a pre-filled form and the right office.',
+    tags: ['LLM Assistant', 'Multilingual', 'Grounded answers', 'Figma'],
+  },
+  {
     slug: 'chloroguard',
     title: 'ChloroGuard',
-    category: 'AI / ML · Computer Vision',
+    category: 'Machine Learning · Computer Vision',
     featured: true,
     desc: 'AI-powered plant health monitoring that detects and classifies leaf diseases using computer vision and deep learning.',
     tags: ['Python', 'TensorFlow', 'Jupyter', 'Deep Learning'],
     github: 'https://github.com/MohamedSharfan/ChloroGuard',
     live: 'https://chloro-guard.vercel.app/',
-  },
-  {
-    slug: 'govnavai',
-    title: 'GovNavAI',
-    category: 'AI Assistant · DHACK Finalist',
-    featured: true,
-    desc: 'A Sinhala / Tamil / English AI assistant for Sri Lankan government paperwork — ask, get a checklist, a pre-filled form and the right office. 42 verified procedures.',
-    tags: ['AI Assistant', 'Multilingual', 'Figma', 'Product'],
   },
   {
     slug: 'housing-model',
@@ -31,7 +31,7 @@ export const projects = [
   {
     slug: 'skill-swap',
     title: 'Skill-Swap Platform',
-    category: 'Full-stack Web App',
+    category: 'Full-stack · Web App',
     desc: 'A full-stack platform that connects people to exchange skills — authentication, dynamic listings and a clean UI.',
     tags: ['Python', 'Flask', 'MySQL', 'JavaScript'],
     github: 'https://github.com/MohamedSharfan/skill-swap',
@@ -89,16 +89,19 @@ export const projects = [
 ];
 
 export const services = [
-  { title: 'Machine Learning', desc: 'Computer vision, regression and data pipelines in Python.' },
-  { title: 'Full-stack Web', desc: 'React, Next.js, Flask and Node apps — shipped live.' },
-  { title: 'Data & Dashboards', desc: 'EDA and interactive dashboards that make data readable.' },
-  { title: 'Product & UI', desc: 'Figma prototypes and interfaces built around real users.' },
+  { title: 'AI Engineering', desc: 'LLM-powered products, taken from prompt to production.' },
+  { title: 'RAG Systems', desc: 'Retrieval pipelines that ground answers in your own data.' },
+  { title: 'AI Agents', desc: 'Tool-using agents that plan, act and finish real tasks.' },
+  { title: 'Machine Learning', desc: 'Computer vision and predictive models in Python — studying it deeper every day.' },
+  { title: 'Full-stack for AI', desc: "React, Next.js and Flask apps that put models in users' hands." },
 ];
 
+// Marquee rows. Items without a devicon logo render as text chips.
 export const skills = {
-  'ML / AI': ['Python', 'TensorFlow', 'Scikit-learn', 'Jupyter'],
+  'AI Engineering': ['LLMs', 'RAG', 'AI Agents', 'Embeddings', 'Vector Search', 'Prompt Engineering'],
+  'Machine Learning': ['Python', 'TensorFlow', 'Scikit-learn', 'Jupyter'],
   Web: ['React', 'Next.js', 'Node.js', 'TypeScript', 'JavaScript', 'HTML', 'CSS'],
-  Other: ['Java', 'MySQL', 'Docker', 'Git'],
+  Tools: ['Java', 'MySQL', 'Docker', 'Git'],
 };
 
 // Season reel. status: FINALIST | COMPETED | FOUNDER | ONGOING | PROJECT | OFF CODE
@@ -108,7 +111,7 @@ export const moments = [
   { kind: 'quote', text: "It's not where you start, it's how fast you iterate." },
   { kind: 'moment', title: 'lablab.ai × AssemblyAI', place: 'Voice-Agent Hackathon', year: '2026', status: 'COMPETED', note: 'Building voice agents on real-time speech AI.' },
   { kind: 'moment', title: 'StudyBuddy', place: 'Founder', year: 'Now', status: 'FOUNDER', note: 'Tamil-medium O/L revision guides for students.' },
-  { kind: 'quote', text: 'Train in public. Ship in production.' },
+  { kind: 'quote', text: 'Retrieve. Reason. Act. Ship.' },
   { kind: 'moment', title: 'Rotaract Club', place: 'University of Ruhuna', year: '—', status: 'PROJECT', note: 'RotaSphere — the club website project.' },
   { kind: 'moment', title: 'Off code', place: 'Badminton · Chess · Table tennis', year: 'Always', status: 'OFF CODE', note: 'Strategy on the board, speed on the court.' },
 ];

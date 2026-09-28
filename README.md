@@ -1,6 +1,6 @@
 # SHARFAN.EXE — Mohamed Sharfan's portfolio
 
-A 3D, motion-first portfolio. Live: https://mohamedsharfan.github.io/myPortfolio/
+A 3D, motion-first portfolio for an AI engineer building RAG systems and AI agents (and studying machine learning). Live: https://mohamedsharfan.github.io/myPortfolio/
 
 **The scroll journey**
 

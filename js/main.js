@@ -82,7 +82,7 @@ function renderContent() {
   $('#serviceRows').innerHTML = services.map((s, i) => `<li class="srow" data-reveal><button class="srow__in" data-open="modal" data-cursor="Hire">
       <span class="srow__i">${pad(i + 1)}</span><h3>${esc(s.title)}</h3><p>${esc(s.desc)}</p><span class="srow__badge">${icon('i-arrow-ur')}</span></button></li>`).join('');
   // marquee
-  const rows = [['Web', skills.Web, ''], ['ML / AI', skills['ML / AI'], 'mrow--dark'], ['Other', skills.Other, '']];
+  const rows = [['AI Eng', skills['AI Engineering'], 'mrow--dark'], ['ML', skills['Machine Learning'], ''], ['Web', skills.Web, 'mrow--dark'], ['Tools', skills.Tools, '']];
   $('#marquee').innerHTML = rows.map(([g, list, cls], r) => {
     const set = list.map((s) => `<span class="mchip">${ICONS[s] ? `<img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/${ICONS[s]}.svg" alt="" width="48" height="48" decoding="async">` : ''}${esc(s)}<small>${esc(g)}</small></span>`).join('');
     return `<div class="mrow ${cls}" data-dir="${r % 2 ? 1 : -1}">${`<div class="mrow__set">${set}</div>`.repeat(4)}</div>`;
@@ -99,7 +99,7 @@ function renderContent() {
     { n: n, s: '', l: 'Projects in the room' },
     { n: moments.filter((m) => m.kind === 'moment' && /COMPETED|FINALIST/.test(m.status)).length, s: '', l: 'Hackathons in 2026' },
     { n: 110, s: '+', l: 'Teams at DHACK — finished top 5' },
-    { n: tools, s: '', l: 'Tools in the daily stack' },
+    { n: tools, s: '', l: 'Skills & tools in the stack' },
   ];
   $('#statsGrid').innerHTML = stats.map((s) => `<li data-reveal><p class="stat__n"><span data-count="${s.n}">0</span>${s.s ? `<small>${s.s}</small>` : ''}</p><p class="stat__l">${esc(s.l)}</p></li>`).join('');
   // room dots / total
@@ -124,9 +124,10 @@ setInterval(tickClock, 1000);
 /* ---------------- hero card carousel ---------------- */
 (function heroCard() {
   const items = [
-    { c: 'Currently building', t: 'StudyBuddy — O/L revision guides.' },
-    { c: 'Featured model', t: 'ChloroGuard — leaf-disease AI.' },
+    { c: 'Focus', t: 'RAG systems & AI agents.' },
     { c: 'Hackathon', t: 'GovNavAI — DHACK finalist.' },
+    { c: 'Studying', t: 'Machine learning, in public.' },
+    { c: 'Currently building', t: 'StudyBuddy — O/L revision guides.' },
   ];
   const slot = $('#hcardSlot'), dots = $('#hcardDots');
   slot.innerHTML = items.map((it) => `<div class="hcard__item"><small>${it.c}</small><b>${it.t}</b></div>`).join('');
@@ -359,12 +360,12 @@ function setupMarquee() {
   let skew = 0, boost = 0;
   gsap.ticker.add((_, dt) => {
     const v = lenis ? lenis.velocity : 0;
-    boost += (Math.abs(v) * 0.35 - boost) * 0.1;
+    boost += (Math.min(Math.abs(v) * 0.35, 4) - boost) * 0.1;
     skew += (clamp(v * 0.25, -8, 8) - skew) * 0.1;
     rows.forEach((r) => {
       if (!r.w) return;
       r.x += r.dir * (0.045 * dt) * (1 + boost) * (REDUCED ? 0 : 1);
-      if (r.x <= -r.w) r.x += r.w; if (r.x > 0) r.x -= r.w;
+      r.x = (r.x % r.w) - (r.x % r.w > 0 ? r.w : 0); // keep in (-w, 0]
       r.el.style.transform = `translate3d(${r.x}px,0,0) skewX(${-skew}deg)`;
     });
   });
