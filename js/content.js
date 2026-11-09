@@ -131,7 +131,7 @@ export const skills = {
 
 // Season reel. status: FINALIST | COMPETED | FOUNDER | ONGOING | PROJECT | OFF CODE
 export const moments = [
-  { kind: 'moment', title: 'DHACK \'26', place: 'Inter-University · Univ. of Sri Jayewardenepura', year: '2026', status: 'FINALIST', note: '1st Runner-Up (2nd place) among 150+ teams with GovNavAI, representing the University of Ruhuna as Team ByteMe.' },
+  { kind: 'moment', title: 'DHACK \'26 · 2nd Place', place: 'Inter-University · Univ. of Sri Jayewardenepura', year: '2026', status: '2ND PLACE', note: '2nd place among 150+ teams with GovNavAI, representing the University of Ruhuna as Team ByteMe.' },
   { kind: 'moment', title: 'CodeSplash', place: 'Agentic AI Phase', year: '2026', status: 'FINALIST', note: 'MURAYA finalist among 120+ teams, representing the University of Ruhuna as Team ByteMe.' },
   { kind: 'moment', title: 'ML & AI Nexus', place: '24h Kaggle round', year: '2026', status: 'COMPETED', note: 'Hospital readmission prediction, Trustworthy AI track.' },
   { kind: 'quote', text: "It's not where you start, it's how fast you iterate." },

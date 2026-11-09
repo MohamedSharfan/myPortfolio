@@ -98,7 +98,7 @@ function renderContent() {
   const stats = [
     { n: n, s: '', l: 'Projects in the room' },
     { n: moments.filter((m) => m.kind === 'moment' && /COMPETED|FINALIST/.test(m.status)).length, s: '', l: 'Hackathons in 2026' },
-    { n: 110, s: '+', l: 'Teams at DHACK — finished top 5' },
+    { n: 150, s: '+', l: 'Teams at DHACK — finished 2nd place' },
     { n: tools, s: '', l: 'Skills & tools in the stack' },
   ];
   $('#statsGrid').innerHTML = stats.map((s) => `<li data-reveal><p class="stat__n"><span data-count="${s.n}">0</span>${s.s ? `<small>${s.s}</small>` : ''}</p><p class="stat__l">${esc(s.l)}</p></li>`).join('');
@@ -125,7 +125,7 @@ setInterval(tickClock, 1000);
 (function heroCard() {
   const items = [
     { c: 'Focus', t: 'RAG systems & AI agents.' },
-    { c: 'Hackathon', t: 'GovNavAI — DHACK \'26 2nd place.' },
+    { c: 'Hackathon', t: 'GovNavAI — DHACK \'26 2nd place among 150+ teams.' },
     { c: 'Studying', t: 'Machine learning, in public.' },
     { c: 'Currently building', t: 'StudyBuddy — O/L revision guides.' },
   ];
