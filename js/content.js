@@ -5,10 +5,35 @@ export const projects = [
   {
     slug: 'govnavai',
     title: 'GovNavAI',
-    category: 'AI Engineering · DHACK Finalist',
+    category: 'AI Engineering · 2nd Place · DHACK \'26',
     featured: true,
-    desc: 'A Sinhala / Tamil / English AI assistant for Sri Lankan government paperwork, grounded in 42 verified procedures — ask a question, get a checklist, a pre-filled form and the right office.',
-    tags: ['LLM Assistant', 'Multilingual', 'Grounded answers', 'Figma'],
+    desc: 'An AI-powered multilingual citizen assistance platform that helps Sri Lankans navigate government services with verified guidance, document checklists, pre-filled forms and office navigation. GovNavAI placed 2nd among 150+ teams in the inter-university DHACK \'26 competition.',
+    tags: ['2nd Place', '150+ Teams', 'Inter-University', 'DHACK \'26', 'Team ByteMe', 'AI Assistant'],
+  },
+  {
+    slug: 'cctv-suspicious-behavior',
+    title: 'AI-Powered Theft & Suspicious Behavior Detection',
+    category: 'Machine Learning · Computer Vision',
+    featured: true,
+    desc: 'An assistive CCTV intelligence platform that detects and tracks people, analyzes movement and pose features, scores suspicious behavior, and presents explainable alerts for human review.',
+    tags: ['YOLO', 'Computer Vision', 'FastAPI', 'Next.js', 'Explainable Alerts'],
+    github: 'https://github.com/MohamedSharfan/Theft-Suspicious-Behavior-Detection-CCTV-AI-',
+  },
+  {
+    slug: 'civicflow',
+    title: 'CivicFlow',
+    category: 'Civic Technology · Community Platform',
+    featured: true,
+    desc: 'A community issue reporting and management platform that helps residents report local problems and supports transparent follow-up toward resolution.',
+    tags: ['Civic Tech', 'Issue Reporting', 'Community Platform', 'Full-stack'],
+  },
+  {
+    slug: 'muraya',
+    title: 'MURAYA',
+    category: 'Agentic AI · CodeSplash Finalist',
+    featured: true,
+    desc: 'An agentic AI decision-support system for landslide response and last-mile coordination. MURAYA was selected as a finalist at CodeSplash from more than 120 teams.',
+    tags: ['Finalist · 120+ Teams', 'CodeSplash', 'Agentic AI', 'Disaster Response', 'Team ByteMe'],
   },
   {
     slug: 'chloroguard',
@@ -48,11 +73,19 @@ export const projects = [
   {
     slug: 'akurana-ugyg',
     title: 'Akurana UG/YG',
-    category: 'Web · Next.js',
+    category: 'Contribution · Akurana UG/YG · Web',
     desc: 'A modern, SEO-optimised Next.js website for a youth organisation, with an admin panel, live in production.',
-    tags: ['Next.js', 'SEO', 'Admin Panel', 'Vercel'],
+    tags: ['Contribution', 'Next.js', 'SEO', 'Admin Panel', 'Vercel'],
     github: 'https://github.com/MohamedSharfan/akurana-ug-yg-website',
     live: 'https://ugygakurana.lk',
+  },
+  {
+    slug: 'lucky-pass',
+    title: 'Lucky Pass',
+    category: 'Contribution · Rotaract Club of University of Ruhuna',
+    desc: 'A premium raffle platform that digitizes ticket reservations, payment verification and live ticket management for the Rotaract Club of University of Ruhuna.',
+    tags: ['Contribution', 'Next.js', 'Supabase', 'Three.js', 'Admin Dashboard'],
+    github: 'https://github.com/MohamedSharfan/Rotaract-Ruhuna-LuckyPass',
   },
   {
     slug: 'sedssl-pm',
@@ -78,14 +111,6 @@ export const projects = [
     tags: ['Python', 'REST API', 'Backend'],
     github: 'https://github.com/MohamedSharfan/user-registration-backend',
   },
-  {
-    slug: 'crewzero',
-    title: 'CrewZero',
-    category: 'Web App · Team Coordination',
-    desc: 'A collaborative app for team management and coordination with a dynamic, responsive interface.',
-    tags: ['JavaScript', 'HTML', 'CSS'],
-    github: 'https://github.com/MohamedSharfan/CrewZero',
-  },
 ];
 
 export const services = [
@@ -106,7 +131,8 @@ export const skills = {
 
 // Season reel. status: FINALIST | COMPETED | FOUNDER | ONGOING | PROJECT | OFF CODE
 export const moments = [
-  { kind: 'moment', title: 'DHACK Finals', place: 'Univ. of Sri Jayewardenepura', year: '2026', status: 'FINALIST', note: 'Team ByteMe — top 5 of 110+ teams with GovNavAI.' },
+  { kind: 'moment', title: 'DHACK \'26', place: 'Inter-University · Univ. of Sri Jayewardenepura', year: '2026', status: 'FINALIST', note: '1st Runner-Up (2nd place) among 150+ teams with GovNavAI, representing the University of Ruhuna as Team ByteMe.' },
+  { kind: 'moment', title: 'CodeSplash', place: 'Agentic AI Phase', year: '2026', status: 'FINALIST', note: 'MURAYA finalist among 120+ teams, representing the University of Ruhuna as Team ByteMe.' },
   { kind: 'moment', title: 'ML & AI Nexus', place: '24h Kaggle round', year: '2026', status: 'COMPETED', note: 'Hospital readmission prediction, Trustworthy AI track.' },
   { kind: 'quote', text: "It's not where you start, it's how fast you iterate." },
   { kind: 'moment', title: 'lablab.ai × AssemblyAI', place: 'Voice-Agent Hackathon', year: '2026', status: 'COMPETED', note: 'Building voice agents on real-time speech AI.' },

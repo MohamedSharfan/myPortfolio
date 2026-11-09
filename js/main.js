@@ -125,7 +125,7 @@ setInterval(tickClock, 1000);
 (function heroCard() {
   const items = [
     { c: 'Focus', t: 'RAG systems & AI agents.' },
-    { c: 'Hackathon', t: 'GovNavAI — DHACK finalist.' },
+    { c: 'Hackathon', t: 'GovNavAI — DHACK \'26 2nd place.' },
     { c: 'Studying', t: 'Machine learning, in public.' },
     { c: 'Currently building', t: 'StudyBuddy — O/L revision guides.' },
   ];
